@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+	* {
+		font-size: 14px;
+	}
+	
+	h1 {
+		font-size: 28px;
+	}
+	
+	.important {
+		color: red;
+	}
+	
+	form {
+		width: 640px;
+		margin: 0 auto;
+	}
+	
+	.flex {
+		display: flex;
+		justify-content: flex-end;
+		border-bottom: 2px solid black;
+		margin-bottom: 20px;
+	}
+	.width139px {
+		display: inline-block;
+		width: 139px;
+	}
+	
+	.width333px {
+		display: inline-block;
+		width: 333px;
+		height: 43px;
+	}
+	
+	.margin {
+		margin-bottom: 20px;
+	}
+	
+	.button {
+		width: 120px;
+		height: 46px;
+		background: white;
+		border: 1px solid #5F0080;
+		color: #5F0080;
+	}
+	
+	.width {
+		width:340px;
+		height: 43px;
+		border: 1px solid #5F0080;
+		color: #5F0080;
+		background: white;
+	}
+	
+	.span {
+		display: inline-block;
+	    margin-left: 142px;
+	    margin-top: 10px;
+	}
+	
+	.margin-right {
+		margin-right: 65px;
+	}
+</style>
+<title>회원가입 - 컬리</title>
+</head>
+<body>
+	<div style="margin: 100px 0 100px 0">
+		<form name="joinForm">
+			<div>
+				<div style="text-align: center;">
+					<h1>회원가입</h1>
+				</div>
+			</div>
+			
+			<div class="flex">
+				<span><span class="important">*</span> 필수입력사항</span>
+			</div>
+			
+			<div class="margin">
+				<div>
+					<span class="width139px">아이디<span class="important">*</span></span>
+					<label>
+						<input type="text" class="width333px" name="id" placeholder="아이디를 입력해주세요.">
+					</label>
+					<label>
+						<input type="button" class="button" name="checkId" value="중복확인">
+					</label>
+				</div>
+			</div>
+			
+			<div class="margin">
+				<span class="width139px">비밀번호<span class="important">*</span></span>
+				<label>
+					<input type="password" class="width333px" name="password" placeholder="비밀번호를 입력해주세요.">
+				</label>
+			</div>
+			
+			<div class="margin">
+				<span class="width139px">비밀번호 확인<span class="important">*</span></span>
+				<label>
+					<input type="password" class="width333px" name="password" placeholder="비밀번호를 한번 더 입력해주세요.">
+				</label>
+			</div>
+			
+			<div class="margin">
+				<span class="width139px">이름<span class="important">*</span></span>
+				<label>
+					<input type="text" class="width333px" name="name" placeholder="이름을 입력해주세요.">
+				</label>
+			</div>
+			
+			<div class="margin">
+				<span class="width139px">이메일<span class="important">*</span></span>
+				<label>
+					<input type="text" class="width333px" name="email" placeholder="예:marketkurly@kurly.com">
+				</label>
+				<label>
+					<input type="button" class="button" name="checkId" value="중복확인">
+				</label>
+			</div>
+			
+			<div class="margin">
+				<span class="width139px">휴대폰<span class="important">*</span></span>
+				<label>
+					<input type="text" class="width333px" name="phone" placeholder="숫자만 입력해주세요.">
+				</label>
+				<label>
+					<input type="button" class="button" name="checkId" value="인증번호">
+				</label>
+			</div>
+			
+			<div class="margin">
+				<div>
+					<span class="width139px">주소<span class="important">*</span></span>
+					<button class="width">
+						<img src="https://res.kurly.com/pc/service/cart/2007/ico_search.svg">
+						<span>주소 검색</span>
+					</button>
+				</div>
+				<div>
+					<span class="span">배송지에 따라 상품 정보가 달라질 수 있습니다.</span>
+				</div>
+			</div>
+			
+			<div class="margin">
+				<span class="width139px">성별</span>
+		        <label class="margin-right"><input type="radio" name="gender" value="남"> 남자</label>
+		        <label class="margin-right"><input type="radio" name="gender" value="여"> 여자</label>
+				<label class="margin-right"><input type="radio" name="gender" value="선택안함"> 선택안함</label>
+			</div>
+			
+			<div class="margin">
+				<span class="width139px">생년월일</span>
+				<div class="width333px" style="border: 1px solid black; line-height: 40px; text-align: center;">
+					<input type="text" name="year" placeholder="YYYY" style="border: none; width: 27%;"><span>/</span><input type="text" name="month" placeholder="MM" style="border: none; width: 27%;"><span>/</span><input type="text" name="day" placeholder="DD" style="border: none; width: 27%;">
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
